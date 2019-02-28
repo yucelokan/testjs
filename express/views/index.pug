@@ -1,0 +1,39 @@
+html
+    head
+        title merhaba pug
+    body
+        include header.pug
+
+        br
+        hr
+
+        - var okul = `Kocaeli Üniversitesi`
+        - var sehir = `Kocaeli`
+            
+        =okul
+        br
+        | Bulunduğu şehir: #{ sehir.toUpperCase() }
+        br
+        hr
+        
+        - var sayi = 12
+
+        if !sayi
+            | sayi yok
+        else if sayi == 12
+            | sayi = 12
+        else
+            | sayi 12 değil.
+        
+
+        br
+        hr
+
+        ul 
+            each val in [1,2,3,4,5,6,7,8]
+                li= val
+        br
+        span(style = "color: black") This page created by #{name} with PUG.
+
+        br
+    include footer.pug
