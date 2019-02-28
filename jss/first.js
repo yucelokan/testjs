@@ -69,10 +69,6 @@ const getUserLocation = (userId) => {
 async function asenkron(){
 
     try{
-        setInterval(() =>{
-            console.log(`async control`)
-        },1000)
-    
         console.log(`user yükleniyor`)
         const user = await getUser()
         console.log(user.name)
