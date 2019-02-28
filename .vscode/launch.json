@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "testjs",
-            "program": "${workspaceFolder}/second.js"
+            "program": "${workspaceFolder}/jss/event-emitter.js"
         }
     ]
 }
